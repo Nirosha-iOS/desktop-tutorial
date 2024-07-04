@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration Page</title>
+  <style>
+    .error { color: red; }
+  </style>
+</head>
+<body>
+  <h2>Registration Page</h2>
+  <form id="registerForm">
+    <label for="title">Title:</label><br>
+    <select id="title" name="title">
+      <option value="">Select</option>
+      <option value="Mr.">Mr.</option>
+      <option value="Ms.">Ms.</option>
+      <option value="Mrs.">Mrs.</option>
+      <option value="Dr.">Dr.</option>
+    </select><br>
+    <span id="titleError" class="error"></span><br><br>
+
+    <label for="username">Username:</label><br>
+    <input type="text" id="username" name="username"><br>
+    <span id="usernameError" class="error"></span><br><br>
+
+    <label for="email">Email:</label><br>
+    <input type="text" id="email" name="email"><br>
+    <span id="emailError" class="error"></span><br><br>
+
+    <label for="phone">Phone Number:</label><br>
+    <input type="text" id="phone" name="phone"><br>
+    <span id="phoneError" class="error"></span><br><br>
+
+    <label for="password">Password:</label><br>
+    <input type="password" id="password" name="password"><br>
+    <span id="passwordError" class="error"></span><br><br>
+
+    <label for="confirmPassword">Confirm Password:</label><br>
+    <input type="password" id="confirmPassword" name="confirmPassword"><br>
+    <span id="confirmPasswordError" class="error"></span><br><br>
+
+    <input type="submit" value="Register">
+  </form>
+
+  <script src="registerValidation.js"></script>
+</body>
+</html>
